@@ -33,7 +33,7 @@ app.post("/add", async (req, res) => {
   const data = response.data;
 
   if (data.Response) {
-    res.json({
+    const relevantDetails = {
       title: data.Title,
       rating: data.imdbRating,
       genre: data.Genre,
@@ -41,10 +41,15 @@ app.post("/add", async (req, res) => {
       cast: data.Actors,
       poster: data.Poster,
       director: data.Director,
-    });
+    };
+
+    res.json(relevantDetails);
   } else {
     res.status(404).json({ detail: "Title not found!" });
   }
 });
 
-app.listen(PORT, console.log("Server up and running..."));
+app.listen(
+  PORT,
+  console.log(`Server up and running on http://localhost:${PORT}...`)
+);
