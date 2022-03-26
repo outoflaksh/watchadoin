@@ -1,4 +1,4 @@
-import { CardContainer } from "./MovieCard.styled";
+import { CardContainer } from "./styled/MovieCard.styled";
 
 const MovieCard = ({ movie }) => {
   //   console.log(movie);
