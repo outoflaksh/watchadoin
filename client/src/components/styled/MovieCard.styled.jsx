@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
-  height: 200px;
-  width: 65%;
+  height: 240px;
+  width: 100%;
   background: gray;
-  padding: 20px;
   margin-top: 15px;
-  display: flex;
+  padding: 20px;
 
   img {
     height: 200px;
