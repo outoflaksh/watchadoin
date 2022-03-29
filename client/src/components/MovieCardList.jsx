@@ -4,7 +4,7 @@ import MovieCard from "./MovieCard.jsx";
 
 const MovieCardList = () => {
   return (
-    <div>
+    <div style={{ width: "65%" }}>
       {movieList.map((movie, idx) => (
         <MovieCard movie={movie} key={idx} />
       ))}
