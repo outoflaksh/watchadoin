@@ -1,10 +1,13 @@
 import MovieCardList from "../components/MovieCardList";
+import { Page, Flex } from "../components/styled/Common.styled";
 
 const Watchlist = () => {
   return (
-    <>
-      <MovieCardList />
-    </>
+    <Page>
+      <Flex align="center" justify="center">
+        <MovieCardList />
+      </Flex>
+    </Page>
   );
 };
 
