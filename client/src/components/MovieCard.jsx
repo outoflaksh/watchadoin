@@ -1,5 +1,3 @@
-import styled from "styled-components";
-
 import { CardContainer, Info } from "./styled/MovieCard.styled";
 import { Flex } from "./styled/Common.styled";
 
@@ -25,6 +23,7 @@ const MovieCard = ({ movie }) => {
   );
 };
 
+// specific styles
 const genreStyles = {
   fontStyle: "italic",
   fontWeight: 300,
