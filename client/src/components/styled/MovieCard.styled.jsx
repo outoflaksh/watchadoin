@@ -24,12 +24,12 @@ export const Info = styled.div`
 
   h1 {
     font-weight: 900;
-    font-size: 2.8rem;
+    font-size: 2.6rem;
 
     span {
       color: #ffeeca;
       font-weight: 600;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       margin-left: 10px;
     }
   }
