@@ -2,14 +2,17 @@ const express = require("express");
 const dotenv = require("dotenv");
 const parser = require("body-parser");
 const axios = require("axios");
+const cors = require("cors");
 
 const app = express();
 
+//middleware
+app.use(cors());
+app.use(parser.urlencoded({ extended: true }));
+app.use(parser.json());
+
 // env variables
 dotenv.config();
-
-//middleware
-app.use(parser.urlencoded({ extended: true }));
 
 const PORT = process.env.PORT || 8000;
 
@@ -18,6 +21,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/add", async (req, res) => {
+  console.log(`Recieved request: ${req.body.title}`);
   if (req.body.title == null) {
     return res.status(422).json({ detail: "missing parameters!" });
   }
