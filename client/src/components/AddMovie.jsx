@@ -2,6 +2,8 @@ import { useContext, useRef } from "react";
 import { MovieContext } from "../contexts/MovieContext";
 import axios from "axios";
 
+import { Input, Button } from "./styled/AddMovieForm.styled";
+
 const AddMovie = () => {
   const [movies, setMovies] = useContext(MovieContext);
   const addMovieForm = useRef(undefined);
@@ -31,11 +33,11 @@ const AddMovie = () => {
 
   return (
     <form ref={addMovieForm}>
-      <input type="text" name="title" placeholder="Title" required={true} />
-      <input type="text" name="year" placeholder="Year (optional)" />
-      <button type="submit" onClick={handleOnClick}>
+      <Input type="text" name="title" placeholder="Title" required={true} />
+      <Input type="text" name="year" placeholder="Year (optional)" />
+      <Button type="submit" onClick={handleOnClick}>
         + Add
-      </button>
+      </Button>
     </form>
   );
 };
