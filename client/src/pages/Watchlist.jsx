@@ -1,5 +1,5 @@
 import MovieCardList from "../components/MovieCardList";
-import AddMovie from "../components/AddMovie";
+import AddMovieForm from "../components/AddMovieForm";
 import { MovieProvider } from "../contexts/MovieContext";
 import { Page, Flex } from "../components/styled/Common.styled";
 
@@ -8,7 +8,7 @@ const Watchlist = () => {
     <Page>
       <Flex align="center" justify="center" direction="column">
         <MovieProvider>
-          <AddMovie />
+          <AddMovieForm />
           <MovieCardList />
         </MovieProvider>
       </Flex>
