@@ -12,7 +12,7 @@ const Navbar = () => {
           <h1>My watchlist</h1>
         </NavItem>
         <NavItem>
-          <h3>Nav items links</h3>
+          <h5>HOME WATCHLIST BOARDS CHAT</h5>
         </NavItem>
       </Flex>
     </Nav>

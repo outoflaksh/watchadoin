@@ -5,7 +5,16 @@ export const Nav = styled.nav`
   background-color: #384360;
   color: #c2cefb;
   font-family: "Montserrat", "Inter", sans-serif;
-  font-weight: 300;
+
+  h1 {
+    font-weight: 500;
+  }
+
+  h5 {
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: #7a84a9;
+  }
 `;
 
 export const NavItem = styled.span`
