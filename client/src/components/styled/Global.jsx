@@ -14,6 +14,10 @@ const GlobalStyles = createGlobalStyle`
         font-size: 18px;
         background-color: #3E4C72;
     }
+
+    input, button {
+        font: inherit
+    }
 `;
 
 export default GlobalStyles;
