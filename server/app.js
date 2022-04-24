@@ -39,7 +39,7 @@ app.post("/add", async (req, res) => {
   });
   const data = response.data;
 
-  if (data.Response) {
+  if (data.Response === "True") {
     const relevantDetails = {
       title: data.Title,
       rating: data.imdbRating,
