@@ -21,10 +21,13 @@ app.get("/", (req, res) => {
 });
 
 app.post("/add", async (req, res) => {
-  console.log(`Recieved request: ${req.body.title}`);
   if (req.body.title == null) {
-    return res.status(422).json({ detail: "missing parameters!" });
+    return res
+      .status(422)
+      .json({ detail: "Missing parameters! Title is required" });
   }
+
+  console.log(`Recieved request: ${req.body.title} of year ${req.body.year}`);
 
   const title = req.body.title;
   const year = req.body.year;
