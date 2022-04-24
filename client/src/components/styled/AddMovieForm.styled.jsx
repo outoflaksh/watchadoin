@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const FormContainer = styled.div`
+  margin: 20px 0;
+`;
+
 export const Input = styled.input`
   padding: 10px 15px;
   font-size: 1rem;
