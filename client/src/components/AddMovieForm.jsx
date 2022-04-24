@@ -23,7 +23,7 @@ const AddMovie = () => {
         payload
       );
 
-      setMovies((movies) => {
+      setMovies(() => {
         return [movieDetails.data, ...movies];
       });
     } catch (err) {
